@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hangman Game</title>
+
+</head>
+<body>
+<div class="container">
+<div><h1>Hangman Game</h1></div>
+
+
+
+<!-- 
+- Computer selects a word from list and presents words on page  with blank spaces in place of the letters.
+- Player guesses letters
+- When player selects correct letter, the computer fills in the corresponding letter
+- When player guesses an incorrect letter, the computer logs the wrong letter on the screen so the user can see it, and then decreases chances by 1. 
+- The player gets 15 guesses to get the word correct.
+
+- Reset Game Button
+- Display Image/Message When Win/Lose
+- Display Completed Word
+- Only be able to use letter once
+- Only able to guess letters
+
+
+
+
+-->
+
+<div>
+  <p>Guesses to go: <span id="guessesLeft"></span></p>
+  <p>Wrong Guesses: <span id="wrongGuesses"></span></p>
+  <p>Player Wins: <span id="winCounter"></span></p>
+  <p>Player Losses: <span id="lossCounter"></span></p>
+    </div>
+
+<div>
+  <h3 id="wordBlank"></h3>
+    </div>
+
+  <div id="gameEndMessage"></div>
+
+<script src="./assets/javascript/game.js"></script>
+
+  
+</div>
+</body>
+</html>
