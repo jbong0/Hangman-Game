@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Hangman Game</title>
+    
+  <title> Guess The Fruit</title>
+
+<!-- jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+<!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+
+
 <body>
-<div class="container">
-<div><h1>Hangman Game</h1></div>
 
 
 
-<!-- 
-- Computer selects a word from list and presents words on page  with blank spaces in place of the letters.
-- Player guesses letters
-- When player selects correct letter, the computer fills in the corresponding letter
-- When player guesses an incorrect letter, the computer logs the wrong letter on the screen so the user can see it, and then decreases chances by 1. 
-- The player gets 15 guesses to get the word correct.
+<div class="container bg-white text-center my-5 pt-3 pb-5">
 
-- Reset Game Button
-- Display Image/Message When Win/Lose
-- Display Completed Word
-- Only be able to use letter once
-- Only able to guess letters
+ <div class=" container text-center pt-3 jumbotron jumbotron-fluid bg-white ">
+    <h1>Fruity Words</h1></div>
 
 
+<div class="row">
+<div class="col-md-3">
+  <p>Guesses Left: 
+    <div id="guessesLeft" class="guessDiv"></div></p>
+  <p>Wrong Guesses: 
+    <div id="wrongGuesses" class="guessDiv"></div></p>
+      </div>
+          </div>
 
 
--->
 
-<div>
-  <p>Guesses to go: <span id="guessesLeft"></span></p>
-  <p>Wrong Guesses: <span id="wrongGuesses"></span></p>
-  <p>Player Wins: <span id="winCounter"></span></p>
-  <p>Player Losses: <span id="lossCounter"></span></p>
-    </div>
+<div class="row">
+<div class="col-md-3">
+  <p>Player Wins: 
+    <div id="winCounter" class="guessDiv"></div></p>
+  <p>Player Losses: <div id="lossCounter"></div></p>
+    </div>  
+      </div>
 
 <div>
   <h3 id="wordBlank"></h3>
     </div>
 
-  <div id="gameEndMessage"></div>
+<!--   <div id="gameEndMessage"></div>
+  <button type="button" onclick="restartGame()" class="btn btn-success my-4">restart</button> -->
 
+<!-- .js link -->
 <script src="./assets/javascript/game.js"></script>
 
   
-</div>
+</div><!-- container close -->
 </body>
 </html>
+
+
+<!-- 
+- Computer selects a word from lisat and presents words on page  with spaces in place of the letters.
+- Player guesses letters
+- When player selects correct letter, the computer fills in the corresponding letter
+- When player guesses an incorrect letter, the computer logs the wrong letter on the screen so the user can see it, and then decreases chances by 1. 
+- The player gets 15 guesses to get the word correct.
+
+- Add Reset Game Button
+- Display Image/Message When Win/Lose
+- Display Completed Word
+- Only be able to use letter once
+- Only able to guess letters
+-->
