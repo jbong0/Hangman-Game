@@ -1,19 +1,70 @@
 body {
 	background-image: url("../images/fruity.jpg");
 	font-family: 'Luckiest Guy', cursive;
+}
 
+img{
+	height: 150px;
+	width: 150px;
 }
 
 .container{
 	width: 100%;
+	height: 450px;
+	color: #FF8600;
+
 }
 
-.guessDiv{
-	height: 30px;
+#main{
+	border-style: solid;
+	border-color: #e9005b; 
+	border-width: 6px;
 }
 
+.score-window{
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
 h3{
 	font-size: 50px;
 	text-align: center;
 }
 
+#image-div{
+	height: 250px;
+	width:250px;
+}
+
+.wordBlank{
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+/*Rainbow Text*/
+
+h1{
+	margin-top: 20px;
+	animation: rainbow 1s infinite; 
+}
+	@-webkit-keyframes rainbow{
+		20%{color: red;}
+		40%{color: yellow;}
+		60%{color: green;}
+		80%{color: blue;}
+		100%{color: orange;}	
+}
+	@-ms-keyframes rainbow{
+		20%{color: red;}
+		40%{color: yellow;}
+		60%{color: green;}
+		80%{color: blue;}
+		100%{color: orange;}	
+}
+
+	@keyframes rainbow{
+		20%{color: red;}
+		40%{color: yellow;}
+		60%{color: green;}
+		80%{color: blue;}
+		100%{color: orange;}	
+}
