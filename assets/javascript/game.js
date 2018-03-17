@@ -21,6 +21,7 @@ var lossCounter = 1;
 var numOfGuesses = 15;
 
 
+
 function gameStart(){
   wrongGuesses = [];
   numOfGuesses = 15;
@@ -94,7 +95,6 @@ function restartGame() {
     gameStart();
 
 }
-
 
 gameStart();
 document.onkeydown = function(event){

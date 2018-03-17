@@ -3,6 +3,9 @@ body {
 	font-family: 'Luckiest Guy', cursive;
 }
 
+audio{
+	display: none;
+}
 #faded{
 		background-image: url("../images/fruity2.jpg");
 		width: 100%;
@@ -45,6 +48,9 @@ h3{
 	margin-top: 20px;
 }
 
+p{
+	color: #8D9E45;
+}
 /*Rainbow Text*/
 
 h1{
